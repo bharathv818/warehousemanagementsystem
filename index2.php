@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>warehouse management</title>
+<title>Warehouse Management</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
@@ -33,39 +33,26 @@ body, html {
   height: 100%;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("warehpuse.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 </style>
   <div class="titlebar">
-    <h2 style="color:black" align="center">WareHouse</h2>
+    <h1 style="color:black" align="center">WareHouse</h1>
   </div>
 
 <div class="topnav" id="myTopnav">
-<a href="index.php" >Home</a>
+  <a href="index.php" >Home</a>
   <a href="index2.php" class="active">Items</a>
-  <a href="shelf.php">shelf</a>
-  <a href="employees.php">employees</a>
-  <a href="delevaries.php">Delevaries</a>
-  <a href="checkout.php">checkout</a>
+  <a href="employees.php">Employees</a>
+  <a href="delevaries.php">Deliveries</a>
+  <a href="checkout.php">Checkout</a>
  </div> 
 
 <table>
   <tr>
-    <th>item name</th>
-    <th>item no</th>
-    <th>stock</th>
-    <th>price</th>
-    <th>status</th>
+    <th>Item name</th>
+    <th>Item number</th>
+    <th>Stock</th>
+    <th>Price</th>
+    <th>Status</th>
   </tr>
   <?php
     require 'dbhin.php';

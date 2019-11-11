@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>warehouse database </title>
+<title>Warehouse Database</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
@@ -16,33 +16,35 @@ body, html {
   height: 100%;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("warehpuse.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 </style>
 
   <div class="titlebar">
-    <h2 style="color:black" align="center">WareHouse</h2>
+    <h1 style="color:black" align="center">WareHouse</h1>
   </div>
 
 <div class="topnav" id="myTopnav">
-  <!--<a href="index.php" class="active">Home</a>-->
-  
-
-  <!--Login form -->
+  <a href="index.php" class="active">Home</a>
   <?php
   include 'lappearordis.php';
  ?>
  </div>
+
+ <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="2.png">
+          <h3>One System for the Entire Company</h3>
+        </div>
+        <div class="box">
+          <img src="1.png">
+          <h3> Detailed Inventory Visibility</h3>
+        </div>
+        <div class="box">
+          <img src="3.png">
+          <h3>Real Time Delivery and Checkout System</h3>
+        </div>
+      </div>
+    </section>
 
 <?php
   if (isset($_GET['error'])) {

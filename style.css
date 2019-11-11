@@ -201,3 +201,38 @@ input[type=checkbox]{
   -webkit-appearance: show;
   appearance: show;
 }
+.titlebar{
+  font-size: 50px;
+  opacity: 0.8;
+}
+
+body{
+  background-image: url("ok.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table{
+  background-color: #f2f2f2;
+}
+
+
+#boxes{
+  margin-top:30px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:32%;
+  padding:10px;
+  color: white;
+  background-color: #333;
+}
+
+#boxes .box img{
+  width: 200px;
+  padding: 15px;
+}

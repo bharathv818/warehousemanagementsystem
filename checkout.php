@@ -12,7 +12,7 @@ function fred($val)
 <!DOCTYPE html>
 <html>
 <head>
-<title>warehouse management</title>
+<title>Warehouse Management</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
@@ -41,40 +41,27 @@ body, html {
   height: 100%;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("warehpuse.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 </style>
 
   <div class="titlebar">
-    <h2 style="color:black" align="center">WareHouse</h2>
+    <h1 style="color:black" align="center">WareHouse</h1>
   </div>
 
 <div class="topnav" id="myTopnav">
-<a href="index.php" >Home</a>
+  <a href="index.php" >Home</a>
   <a href="index2.php" >Items</a>
-  <a href="shelf.php">shelf</a>
-  <a href="employees.php" >employees</a>
-  <a href="delevaries.php">Delevaries</a>
-  <a href="checkout.php" class="active">checkout</a>
+  <a href="employees.php" >Employees</a>
+  <a href="delevaries.php">Deliveries</a>
+  <a href="checkout.php" class="active">Checkout</a>
  </div> 
 
 <table>
   <tr>
     <th>Address</th>
-    <th>delivery date</th>
-    <th>delivery time</th>
-    <th>item no</th>
-    <th>status</th>
+    <th>Delivery date</th>
+    <th>Delivery time</th>
+    <th>Item number</th>
+    <th>Status</th>
   </tr>
   <?php
     require 'dbhin.php';
@@ -89,7 +76,7 @@ body, html {
          while ($row = $result->fetch_assoc())
         {
              echo "<tr>
-                     <td>".$row["addres"]."</td>
+                     <td>".$row["address"]."</td>
                      <td>".$row["deliver_date_out"]."</td>
                      <td>".$row["deliver_time_out"]."</td>
                      <td>".$row["item_no"]."</td>
@@ -102,12 +89,12 @@ body, html {
 </table>
 <form class="modal-content" action="checkinsert.php" method="POST">
      <div id= delins class="container">
-      <h1>insert delivery details</h1>
+      <h1>Insert delivery details </h1>
       <form name="delinser" method="POST" action="checkinsert.php" style="float: right;height: auto;" >
-      <input style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="text" name="addrs" placeholder="Address" >
-        <input style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="text" name="deldate" placeholder="delivary date" >
-        <input style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="text" name="deltime" placeholder="delivary time" >
-        <input style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="text" name="Itno" placeholder="item number" >
+        <input style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="text" name="addrs" placeholder="Address" >
+        <input style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="text" name="deldate" placeholder="Delivery date" >
+        <input style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="text" name="deltime" placeholder="Delivery time" >
+        <input style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="text" name="Itno" placeholder="Item number" >
         <button style="width: auto;height: 70%;padding: 10px;margin: 5px; " type="submit" name="submitcheck" value="itemsender">ADD</button> 
       </form>
     </form>

@@ -1,18 +1,10 @@
-
-<?php
-function fred($val)
-{
-   echo '<pre>';
-   print_r( $val );
-   echo '</pre>';
-}?>
 <?php
   session_start();
  ?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>warehouse management</title>
+<title>Warehouse Management</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
@@ -42,32 +34,11 @@ body, html {
   height: 100%;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("warehpuse.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 </style>
 
   <div class="titlebar">
-    <h2 style="color:black" align="center">WareHouse</h2>
+    <h1 style="color:black" align="center">WareHouse</h1>
   </div>
-
-<div class="topnav" id="myTopnav">
- <a href="index.php">Home</a>
-  <a href="index2.php">Items</a>
-  <a href="shelf.php" class="active">shelf</a>
-  <a href="employees.php">employees</a>
-  <a href="delevaries.php">Delevaries</a>
-  <a href="checkout.php">checkout</a>
- </div> 
 
  <!--<table>
   <tr>
@@ -84,8 +55,7 @@ body, html {
     //fred($result); die;
     $itemnum= $_GET["itemnumber"];
     
-    
-     if($result->num_rows>0)  //
+     if($result->num_rows>0)  //dont know if i need this
 
     {
          while ($row = $result->fetch_assoc())
@@ -95,12 +65,10 @@ body, html {
             $lvl=$row["on_level"];
         }
     }    
-    fred($row);
     //echo "</table>";
     echo '<div id= shsearch class="container">
-            <h2> shelf number </h2>';
+            <h2> Shelf number </h2>';
     echo $shelfno;
-    echo $lvl;
    ?>
    </table>
    <form class="modal-content" action="shelf.php" method="POST">
@@ -122,22 +90,22 @@ body, html {
          {
            switch($lvl)
            {
-             case '1': echo' <svg id="SH01" width="100" height="100">
+             case 1: echo' <svg id="SH01" width="100" height="100">
              <rect width="100" height="100" style="fill:rgb(0,255,0);stroke-width:10;stroke:rgb(0,0,0)" />
              </svg>';
              break;
 
-             case '2':echo' <svg id="SH01" width="100" height="100">
+             case 2:echo' <svg id="SH01" width="100" height="100">
              <rect width="100" height="100" style="fill:rgb(225,0,0);stroke-width:10;stroke:rgb(0,0,0)" />
              </svg>';
              break;
 
-             case '3':echo' <svg id="SH01" width="100" height="100">
+             case 3:echo' <svg id="SH01" width="100" height="100">
              <rect width="100" height="100" style="fill:rgb(225,255,0);stroke-width:10;stroke:rgb(0,0,0)" />
              </svg>';
             break;
 
-            case '4':echo' <svg id="SH01" width="100" height="100">
+            case 4:echo' <svg id="SH01" width="100" height="100">
             <rect width="100" height="100" style="fill:rgb(0,255,225);stroke-width:10;stroke:rgb(0,0,0)" />
             </svg>';
             break;
