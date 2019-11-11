@@ -8,9 +8,9 @@ if (isset($_POST['submitdel']))
    $del_time =  $_POST['deltime'];
    $eppno =  $_POST['emppno'];
    $itno =  $_POST['Itno'];
- 
+   $shsts = $_POST['shsts']; 
 // Attempt insert query execution
-  $sql = "INSERT INTO deliver (deliver_date, deliver_time, emply_no, item_no) VALUES ('$del_date', '$del_time', '$eppno', '$itno')";
+  $sql = "INSERT INTO deliver (deliver_date, deliver_time, emply_no, item_no, status) VALUES ('$del_date', '$del_time', '$eppno', '$itno','$shsts')";
   if ($conn->query($sql) === TRUE) {
       echo "New record created successfully";
       header("Location: delevaries.php");

@@ -19,6 +19,41 @@ function fred($val)
 
 </head>
 <body>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<style>
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("warehpuse.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 
   <div class="titlebar">
     <h2 style="color:black" align="center">WareHouse</h2>
@@ -54,7 +89,7 @@ function fred($val)
          while ($row = $result->fetch_assoc())
         {
              echo "<tr>
-                     <td>".$row["address"]."</td>
+                     <td>".$row["addres"]."</td>
                      <td>".$row["deliver_date_out"]."</td>
                      <td>".$row["deliver_time_out"]."</td>
                      <td>".$row["item_no"]."</td>

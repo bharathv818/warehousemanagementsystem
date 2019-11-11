@@ -11,18 +11,36 @@
 
 </head>
 <body>
+<style>
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("warehpuse.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 
   <div class="titlebar">
     <h2 style="color:black" align="center">WareHouse</h2>
   </div>
 
 <div class="topnav" id="myTopnav">
-  <a href="index.php" class="active">Home</a>
+  <!--<a href="index.php" class="active">Home</a>-->
   
 
   <!--Login form -->
   <?php
-  include 'lappearordis.php'
+  include 'lappearordis.php';
  ?>
  </div>
 

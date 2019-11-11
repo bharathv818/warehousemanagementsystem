@@ -11,16 +11,16 @@ if (isset($_POST['submitcheck']))
  
 // Attempt insert query execution
   $sql = "INSERT INTO checkpost ( `address`, deliver_date, deliver_time, item_no) VALUES ('$adrs','$del_date', '$del_time', '$itno')";
-  if ($conn->query($sql) === TRUE) {
+  if ($conn->query($sql) === TRUE)
+   {
       echo "New record created successfully";
       header("Location: delevaries.php");
       exit();
-  } 
-  else {
+   } 
+  else 
       echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  
-}
+else{
 header("Location: checkout.php");
 exit();
+}
 ?>
