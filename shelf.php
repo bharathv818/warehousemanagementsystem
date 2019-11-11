@@ -1,3 +1,11 @@
+
+<?php
+function fred($val)
+{
+   echo '<pre>';
+   print_r( $val );
+   echo '</pre>';
+}?>
 <?php
   session_start();
  ?>
@@ -76,7 +84,8 @@ body, html {
     //fred($result); die;
     $itemnum= $_GET["itemnumber"];
     
-     if($result->num_rows>0)  //dont know if i need this
+    
+     if($result->num_rows>0)  //
 
     {
          while ($row = $result->fetch_assoc())
@@ -86,10 +95,12 @@ body, html {
             $lvl=$row["on_level"];
         }
     }    
+    fred($row);
     //echo "</table>";
     echo '<div id= shsearch class="container">
             <h2> shelf number </h2>';
     echo $shelfno;
+    echo $lvl;
    ?>
    </table>
    <form class="modal-content" action="shelf.php" method="POST">
@@ -111,22 +122,22 @@ body, html {
          {
            switch($lvl)
            {
-             case 1: echo' <svg id="SH01" width="100" height="100">
+             case '1': echo' <svg id="SH01" width="100" height="100">
              <rect width="100" height="100" style="fill:rgb(0,255,0);stroke-width:10;stroke:rgb(0,0,0)" />
              </svg>';
              break;
 
-             case 2:echo' <svg id="SH01" width="100" height="100">
+             case '2':echo' <svg id="SH01" width="100" height="100">
              <rect width="100" height="100" style="fill:rgb(225,0,0);stroke-width:10;stroke:rgb(0,0,0)" />
              </svg>';
              break;
 
-             case 3:echo' <svg id="SH01" width="100" height="100">
+             case '3':echo' <svg id="SH01" width="100" height="100">
              <rect width="100" height="100" style="fill:rgb(225,255,0);stroke-width:10;stroke:rgb(0,0,0)" />
              </svg>';
             break;
 
-            case 4:echo' <svg id="SH01" width="100" height="100">
+            case '4':echo' <svg id="SH01" width="100" height="100">
             <rect width="100" height="100" style="fill:rgb(0,255,225);stroke-width:10;stroke:rgb(0,0,0)" />
             </svg>';
             break;
