@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Warehouse Management</title>
+<title>warehouse management</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
@@ -33,26 +33,27 @@ body, html {
   height: 100%;
 }
 
+
 </style>
   <div class="titlebar">
-    <h1 style="color:black" align="center">WareHouse</h1>
+    <h2 style="color:black" align="center">WareHouse</h2>
   </div>
 
 <div class="topnav" id="myTopnav">
-  <a href="index.php" >Home</a>
+<a href="index.php" >Home</a>
   <a href="index2.php" class="active">Items</a>
-  <a href="employees.php">Employees</a>
-  <a href="delevaries.php">Deliveries</a>
-  <a href="checkout.php">Checkout</a>
+  <a href="employees.php">employees</a>
+  <a href="delevaries.php">Delevaries</a>
+  <a href="checkout.php">checkout</a>
  </div> 
 
 <table>
   <tr>
-    <th>Item name</th>
-    <th>Item number</th>
-    <th>Stock</th>
-    <th>Price</th>
-    <th>Status</th>
+    <th>item name</th>
+    <th>item no</th>
+    <th>stock</th>
+    <th>price</th>
+    <th>status</th>
   </tr>
   <?php
     require 'dbhin.php';

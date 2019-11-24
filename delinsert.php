@@ -13,7 +13,9 @@ if (isset($_POST['submitdel']))
   $sql = "INSERT INTO deliver (deliver_date, deliver_time, emply_no, item_no, status) VALUES ('$del_date', '$del_time', '$eppno', '$itno','$shsts')";
   if ($conn->query($sql) === TRUE) {
       echo "New record created successfully";
-      header("Location: delevaries.php");
+      $senddd =  "?deldate=" . $row['deldate'];
+      $senddt = "?deltime=" . $row['deltime'];
+      header("Location: checkout.php".$senddd."&".$senddt);
       exit();
   } 
   else {

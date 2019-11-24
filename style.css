@@ -226,13 +226,13 @@ table{
 #boxes .box{
   float:left;
   text-align: center;
-  width:32%;
+  width:29%;
   padding:10px;
   color: white;
   background-color: #333;
 }
 
 #boxes .box img{
-  width: 200px;
+  width: 400px;
   padding: 15px;
 }

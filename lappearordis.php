@@ -1,4 +1,5 @@
   <?php 
+   if(!isset($_SESSION['uid'])){
     if (isset($_SESSION['emppno'])) {
       // logged in
       echo '<form name="logoutform" method="POST" action="logout.php" style="float: right;height: auto;" >
@@ -41,4 +42,5 @@ function myFunction() {
 </script>';
 
     }
+  }
    ?>

@@ -1,11 +1,5 @@
-<?php
-function fred($val)
-{
-  echo '<pre>';
-   print_r( $val );
-  echo '</pre>';
-}
-?>
+
+
 <?php
 function equals($val1,$val2)
 {
