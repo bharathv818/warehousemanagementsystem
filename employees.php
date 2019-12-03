@@ -64,7 +64,7 @@ tr:nth-child(even) {
   <a href="index2.php" >Items</a>
   <a href="shelf.php">shelf</a>
   <a href="employees.php" class="active">employees</a>
-  <a href="delevaries.php">Delevaries</a>
+  <a href="delevaries.php">Deliveries</a>
   <a href="checkout.php">checkout</a>
  </div> 
 

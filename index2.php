@@ -43,7 +43,7 @@ body, html {
 <a href="index.php" >Home</a>
   <a href="index2.php" class="active">Items</a>
   <a href="employees.php">employees</a>
-  <a href="delevaries.php">Delevaries</a>
+  <a href="delevaries.php">Deliveries</a>
   <a href="checkout.php">checkout</a>
  </div> 
 
